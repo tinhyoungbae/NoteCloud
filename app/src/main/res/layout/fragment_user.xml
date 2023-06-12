@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#232323"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    tools:context="Fragment.UserFragment">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/note_banner_image"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="-135dp"
+        android:layout_toEndOf="@+id/view"
+        android:text="Đăng xuất"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_line_border"
+        android:id="@+id/logoutButton" />
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:id="@+id/profile_image"
+        android:background="@drawable/custom_image"
+        android:src="@drawable/profile_image"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="-70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/userFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Nguyễn Văn Tình"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/lineBar"
+        android:layout_width="130dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/userFullName"
+        android:background="#c0c0c0"/>
+
+    <TextView
+        android:id="@+id/userSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineBar"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="CÀI ĐẶT"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/noteSettingContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteSettingBanner"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:background="@drawable/custom_view_note"
+        android:text="Thay đổi về ghi chú, tải về tất cả ghi chú, xóa ghi chú, v.v..."
+        android:textColor="#FFEB3B"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/noteSettingBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userSetting"
+        android:layout_centerInParent="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Ghi chú"
+        android:background="@drawable/custom_line_border"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/userSettingContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userSettingBanner"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:background="@drawable/custom_view_note"
+        android:text="Thay đổi về tài khoản, cập nhật tài khoản, xóa tài khoản, v.v..."
+        android:textColor="#FFEB3B"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/userSettingBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteSettingContent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:text="Tài khoản"
+        android:background="@drawable/custom_line_border"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

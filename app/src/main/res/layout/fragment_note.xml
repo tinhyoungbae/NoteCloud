@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232323"
+    android:orientation="horizontal"
+    tools:context=".Fragment.NoteFragment"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteBanner"
+        android:text="Danh sách ghi chú"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:background="@drawable/custom_line_border"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/createButton"
+        android:text="NEW"
+        android:layout_marginEnd="20dp"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentRight="true"
+        android:shadowColor="#D5D5D5"
+        android:background="@drawable/custom_button" />
+
+    <View
+        android:id="@+id/lineBar"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/noteBanner"
+        android:background="#c0c0c0"/>
+
+    <GridView
+        android:id="@+id/gridviewNote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lineBar"
+        android:layout_centerInParent="true"
+        android:columnWidth="2dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:textSize="30dp" />
+</RelativeLayout>

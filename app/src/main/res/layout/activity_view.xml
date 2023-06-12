@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232323"
+    tools:context=".ViewActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/custom_view_note" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/save"
+        android:background="#232323"
+        android:src="@drawable/save_ico"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="-65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/save_to_cloud"
+        android:background="#232323"
+        android:src="@drawable/cloud_ico"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="-65dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/save_to_cloud_icon"
+        android:background="#232323"
+        android:src="@drawable/share_ico"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="-65dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:id="@+id/saveBanner"
+        android:text="Save"
+        android:textSize="20dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_below="@id/view"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:id="@+id/saveCloudBanner"
+        android:text="Cloud save"
+        android:textSize="20dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_below="@id/view"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:id="@+id/shareBanner"
+        android:text="Share"
+        android:textSize="20dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginStart="265dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_below="@id/view"
+        android:textColor="@color/white"
+        />
+
+    <View
+        android:id="@+id/viewBody"
+        android:layout_width="390dp"
+        android:layout_height="610dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/view"
+        android:background="@drawable/custom_view_note"
+        />
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="64dp"
+        android:id="@+id/titleContent"
+        android:hint="Tiêu đề ghi chú"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/view"
+        android:inputType="textMultiLine"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:background="@drawable/custom_view_note"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:id="@+id/noteTitle"
+        android:text="Tiêu đề"
+        android:textSize="25dp"
+        android:layout_marginTop="-103dp"
+        android:layout_marginStart="20dp"
+        android:paddingStart="7dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:gravity="center"
+        android:layout_below="@id/titleContent"
+        android:background="@drawable/custom_line_border"
+        android:textColor="@color/white"
+        />
+
+    <View
+        android:id="@+id/lineBar"
+        android:layout_width="370dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/titleContent"
+        android:background="#c0c0c0"/>
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:id="@+id/bodyContent"
+        android:hint="Nội dung ghi chú"
+        android:layout_marginTop="-7dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/bodyTitle"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="25dp"
+        android:fontFamily="monospace"
+        android:scrollbars="vertical"
+        android:textColorHint="@color/white"
+        android:background="@drawable/custom_view_note"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:id="@+id/bodyTitle"
+        android:text="Nội dung"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:paddingStart="7dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:gravity="center"
+        android:layout_below="@id/lineBar"
+        android:background="@drawable/custom_line_border"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>

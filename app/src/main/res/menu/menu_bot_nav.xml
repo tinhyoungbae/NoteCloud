@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/note_home"
+        android:title="Ghi chú"
+        android:icon="@drawable/nav_note_ico"></item>
+    <item android:id="@+id/folder_home"
+        android:title="Cloud"
+        android:icon="@drawable/cloud_ico"></item>
+    <item android:id="@+id/account_home"
+        android:title="Tài khoản"
+        android:icon="@drawable/user"></item>
+</menu>
